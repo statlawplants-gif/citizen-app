@@ -17,6 +17,9 @@ jobs:
       with:
         python-version: '3.10'
     
+    - name: Setup Android SDK (Official Action)
+      uses: android-actions/setup-android@v3
+    
     - name: Install system dependencies
       run: |
         sudo apt-get update
@@ -33,7 +36,9 @@ jobs:
           python3-dev \
           libffi-dev \
           libssl-dev \
-          zlib1g-dev
+          zlib1g-dev \
+          lib32z1 \
+          lib32stdc++6
     
     - name: Install Python dependencies
       run: |
