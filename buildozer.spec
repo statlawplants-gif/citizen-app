@@ -17,3 +17,6 @@ android.arch = arm64-v8a
 [buildozer]
 log_level = 2
 warn_on_root = 1
+
+android.sdk = 33
+android.ndk = 25b
